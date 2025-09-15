@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/assets"
+        android:icon="@drawable/ic_asset_filled"
+        android:title="Assets"
+        android:contentDescription="content description assets"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/spacer"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/transactions"
+        android:icon="@drawable/ic_transaction_filled"
+        android:title="Transactions"
+        android:contentDescription="transactions"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "62021715197",
+    "firebase_url": "https://treasure-vault-4e3ca-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "treasure-vault-4e3ca",
+    "storage_bucket": "treasure-vault-4e3ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62021715197:android:e446d65327a8bfb52faa94",
+        "android_client_info": {
+          "package_name": "edu.bluejack24_1.treasurevault"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaFlauoQiVs0Yue8UXi5edD5Mb7hBUXQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/uploaded_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/background_rounded_gray"
+            android:contentDescription="@string/uploaded_image" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_image" />
+
+            <TextView
+                android:id="@+id/upload_image_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/upload_image"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/frame"
+        android:layout_toStartOf="@id/confirm_button"
+        android:backgroundTint="@color/red"
+        android:layout_marginEnd="8dp"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/frame"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/green"
+        android:text="@string/confirm" />
+</RelativeLayout>

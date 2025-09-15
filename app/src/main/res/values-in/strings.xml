@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Kotak Harta Karun</string>
+    <string name="treasure_vault">Kotak Harta Karun</string>
+    <string name="slogan">Keuangan Anda, dipermudah.</string>
+
+    <string name="register">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="logout">Keluar</string>
+    <string name="title_activity_pin">SetPinActivity</string>
+    <string name="title_activity_pin_template">PinTemplate</string>
+    <string name="title_activity_enter_pin">EnterPinActivity</string>
+    <string name="privacy_security"><![CDATA[Privasi & Keamanan]]></string>
+    <string name="account_page">Akun</string>
+    <string name="settings">Pengaturan</string>
+
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="account_management">Manajemen Akun</string>
+    <string name="change_theme">Ubah Tema</string>
+    <string name="change_theme_description">Ubah mode gelap/terang</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="change_language_description">Ubah Indonesia/Inggis</string>
+    <string name="change_password">Ubah Kata Sandi</string>
+    <string name="pin">Pin</string>
+    <string name="use_pin">Gunakan Pin</string>
+    <string name="change_pin">Ubah Pin</string>
+    <string name="biometric">Biometrik</string>
+    <string name="use_biometric">Gunakan Biometrik</string>
+
+    <string name="password_placeholder">john_doe123</string>
+    <string name="gmail_placeholder">john_doe@gmail.com</string>
+    <string name="login_redirect">Sudah punya akun? Masuk di sini!</string>
+    <string name="register_redirect">Belum punya akun? Daftar di sini!</string>
+    <string name="income">Pendapatan</string>
+    <string name="expense">Pengeluaran</string>
+    <string name="save">Simpan</string>
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="amount">Jumlah</string>
+    <string name="rp">Rp</string>
+    <string name="account">Akun</string>
+    <string name="description">Deskripsi</string>
+    <string name="category">Kategori</string>
+    <string name="overview">Ikhtisar</string>
+    <string name="detail">Detail</string>
+    <string name="total_assets">Total aset</string>
+    <string name="time_frame">Rentang waktu</string>
+    <string name="all">Semua</string>
+    <string name="week">Minggu</string>
+    <string name="august_2024">Agustus 2024</string>
+    <string name="profile_icon">ikon profil</string>
+    <string name="title">Judul</string>
+    <string name="_100_000">100.000</string>
+    <string name="account_name">Nama Akun</string>
+    <string name="date">Tanggal</string>
+    <string name="current_password">Kata Sandi Saat Ini</string>
+    <string name="new_password">Kata Sandi Baru</string>
+    <string name="confirm_new_password">Konfirmasi Kata Sandi Baru</string>
+    <string name="cancel">Batal</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="uploaded_image">Gambar yang Diunggah</string>
+    <string name="upload_image">Unggah gambar</string>
+    <string name="last_week">Minggu Lalu</string>
+    <string name="assets_over_time">Aset dari Waktu ke Waktu</string>
+    <string name="income_by_category">Pendapatan Berdasarkan Kategori</string>
+    <string name="expenses_by_category">Pengeluaran Berdasarkan Kategori</string>
+</resources>

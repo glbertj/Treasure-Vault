@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/landing_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LandingActivity"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/treasure_vault"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:background="@drawable/title_blink"/>
+
+    <TextView
+        android:id="@+id/sloganText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:background="@drawable/title_blink"/>
+
+</LinearLayout>

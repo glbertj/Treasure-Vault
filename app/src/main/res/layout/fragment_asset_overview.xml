@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".fragments.AssetOverviewFragment">
+
+    <TextView
+        android:id="@+id/totalAssets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_assets" />
+
+    <TextView
+        android:id="@+id/totalAssetsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalAssets"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        tools:text="Rp10,000,000.00" />
+
+    <TextView
+        android:id="@+id/difference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalAssetsAmount"
+        android:textColor="@color/green"
+        tools:text="+Rp10,000,000.00 (+100%)" />
+
+    <TextView
+        android:id="@+id/timeFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/difference"
+        android:layout_below="@id/totalAssetsAmount"
+        android:layout_marginStart="8dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="@string/time_frame" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/timeFrame"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/toggleButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lineChart"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/toggle_background"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvWeek"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/week"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/toggle_unselected_background"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/all"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/toggle_selected_background"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

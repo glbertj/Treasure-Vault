@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <FrameLayout
+        android:id="@+id/incomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="280dp"
+        android:layout_weight="4"
+        android:background="@color/green"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/green_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="193dp"
+                android:layout_height="198dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pig_income_2"
+                app:layout_constraintBottom_toBottomOf="@+id/green_layout"
+                app:layout_constraintEnd_toEndOf="@+id/green_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/income_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/income"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="top|start"/>
+    </FrameLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <FrameLayout
+        android:id="@+id/expenseButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="280dp"
+        android:layout_weight="4"
+        android:background="@color/red"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="209dp"
+                android:layout_height="187dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pig_expense_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <TextView
+            android:id="@+id/expense_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expense"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|end"/>
+    </FrameLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</LinearLayout>

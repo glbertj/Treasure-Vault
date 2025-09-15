@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomFloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="fabSize">normal</item>
+        <item name="shapeAppearanceOverlay">@style/CustomFabShape</item>
+    </style>
+
+    <style name="CustomFabShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">56dp</item>
+    </style>
+</resources>

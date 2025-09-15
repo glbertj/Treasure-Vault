@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.PrivacySecurityActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_default="spread">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_left"/>
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_security"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/account_management_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_management"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintTop_toBottomOf="@id/account_management_label"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@id/email_value"/>
+
+<!--    TODO!! CHANGE WITH ACTUAL VALUE-->
+    <TextView
+        android:id="@+id/email_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gmail_placeholder"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="end"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintTop_toTopOf="@id/email_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/email_label"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        app:layout_constraintTop_toBottomOf="@id/email_label"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/password_label"
+        app:layout_constraintStart_toEndOf="@+id/password_label">
+
+        <TextView
+            android:id="@+id/change_password_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:gravity="end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:id="@+id/password_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:gravity="end"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/change_password_value"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/pin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/password_label"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/use_pin_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/use_pin"
+        app:layout_constraintTop_toBottomOf="@id/pin_label"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@id/use_pin_switch"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/use_pin_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pin_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/change_pin_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/change_pin"
+        app:layout_constraintTop_toBottomOf="@id/use_pin_label"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:textColor="@color/dark_gray" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/change_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/change_pin_label"
+        app:layout_constraintStart_toEndOf="@+id/change_pin_label">
+
+        <TextView
+            android:id="@+id/change_pin_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_pin"
+            android:gravity="end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"/>
+
+        <ImageView
+            android:id="@+id/pin_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:gravity="end"
+            android:src="@drawable/ic_arrow_right"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/change_pin_value"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/biometric_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biometric"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/change_pin_label"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+
+    <TextView
+        android:id="@+id/use_biometric_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/use_biometric"
+        app:layout_constraintTop_toBottomOf="@id/biometric_label"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@id/use_biometric_switch"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/use_biometric_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/biometric_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
